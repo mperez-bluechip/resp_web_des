@@ -215,3 +215,15 @@ footer a:hover { color: #000;}
   nav { padding-top: 80px; }
   nav > ul { padding-left: 10px; }
 }
+
+@media screen and (max-width: 625px) {
+  h1 { font-size: 1em; }
+  h3 { margin-bottom: 0px; }
+  a.btn { font-size: .9em; }
+
+  /* Header */
+  header { height: 160px; background-image: url(../images/banner_625.jpg); background-position:  left top;}
+
+  /* Naigation */
+  nav { position: static; width: auto; padding: 20px 15px; background-color: #4b0a0c; }
+}
