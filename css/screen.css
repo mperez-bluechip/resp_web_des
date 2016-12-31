@@ -83,7 +83,7 @@ section.how-to blockquote {
   position: absolute; bottom: 0; right: 4%;
 }
 section.how-to blockquote p { margin: 30px 30px 20px 50px;  }
-section.how-to blockquote p.quote { font-style: italic; font-size: 1.2em; }
+section.how-to blockquote p.quote { font-style: italic; font-size: 1em; }
 section.how-to blockquote p.credit {
   color: #777;
   font-size: .9em; margin-top: 0; padding-left: 20px; line-height: 1.3em;
@@ -93,14 +93,14 @@ section.how-to blockquote::before {
   content: '\201C'; color: #d2bd65;
   position: absolute;
   top: 10px; left: 8px;
-  font-size: 5em;
+  font-size: 4em;
   font-family: serif;
 }
 /* this rule needs fixing, closing qoute not displaying */
-section.how-to blockquote p.qoute::after {
+/*section.how-to blockquote p.qoute::after {
   content: '\201D'; color: #d2bd65;
   font-family: serif;
-}
+}*/
 section.how-to blockquote p.credit::before { content:'\2014'; position: absolute; top: -1px; left: 0; }
 
 /* Navigation */
@@ -189,6 +189,29 @@ footer a:hover { color: #000;}
   section.atmosphere article { padding-left: 325px; background-size: 300px auto; }
 
   /* Section - How To */
-  section.how-to blockquote p.qoute { font-size: 1.1em; line-height: 1.2em; }
+  section.how-to blockquote p.qoute { font-size: 1em; line-height: 1.2em; }
   section.how-to blockquote p.credit { font-size: .85em; }
+}
+
+@media screen and (max-width: 760px) {
+
+  h1 { font-size: 1.8em; }
+  h2 { font-size: 1.4em; }
+  h3 { font-size: 1.1em; }
+  a.btn { font-size: 1em; }
+
+  /* Header */
+  header a.logo { width: 145px; height: 60px; }
+  header div.hero { top: 140px; left: 48%; }
+
+  /* Section - Main */
+  section.main { margin-top: 10px; margin-bottom: 10px; }
+  section.main aside div.content { background-size: 55px 55px; padding-top: 60px; }
+
+  /* Section - How To */
+  section.how-to aside div.content img { width: 85%; }
+
+  /* Naigation */
+  nav { padding-top: 80px; }
+  nav > ul { padding-left: 10px; }
 }
