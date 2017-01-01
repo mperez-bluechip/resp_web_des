@@ -19,6 +19,11 @@ h4 { font-size: 1.1em; }
 p { margin: 0 0 1em 0; font-size: .9em; }
 
 a, a:visited { color: inherit; text-decoration: none; }
+a::after, a:visited::after {
+  content:' ('attr(href) ')';
+  font-style: italic;
+  word-wrap: break-word;
+}
 
 nav { display: none; }
 
@@ -27,6 +32,13 @@ header { position: relative; }
 header::after { content:url(../images/banner_1300_print.jpg); width: 90%; }
 
 header a.logo { display: block; width: 145px; height: 60px; position: absolute; top: 20px; bottom: 20px; }
-header a.logo::after { content:url(../images/logo_print.svg); }
+header a.logo::before { content:url(../images/logo_print.svg); }
+header a.logo::after { display: block; position: absolute; top: 20px; left: 175; }
 header a.logo span { display: none; }
 header div.hero { width: 75%; position: absolute; top: 110px; left: 20px; }
+header div.hero a::after { display: block;  }
+
+section { margin-bottom: 50px; }
+section::after { content:''; display: block; clear: both; }
+section.main { margin-top: 20px; margin-bottom: 30px; }
+section.main aside { width: 33%; float: left; text-align: center; }
