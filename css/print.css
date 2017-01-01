@@ -51,11 +51,12 @@ section.atmosphere { position: relative; margin-bottom: 40px; padding-top: 50px;
 section.atmosphere::before { content:url(../images/photo_lounge_print.jpg); }
 section.atmosphere article { width: 40%; position: absolute; top: 40px; left: 425px; }
 
-section.how-to { padding-top: 50px; border-top: 1px solid #ccc; }
+section.how-to { padding-top: 50px; border-top: 1px solid #ccc; page-break-inside: avoid; }
 section.how-to aside { width: 25%; float: left; margin: 0 35px 0 0; }
 section.how-to div.content img { display: none; }
 section.how-to aside:nth-child(1) div.content::before { content:url(../images/photo_seating_print.jpg); }
 section.how-to aside:nth-child(2) div.content::before { content:url(../images/photo_lighting_print.jpg); }
+
 
 section.how-to blockquote {
   width: 30%;
